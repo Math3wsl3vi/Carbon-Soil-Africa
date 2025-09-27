@@ -9,11 +9,11 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1B5E20] mb-6">
               Closing the Loop: Carbon Removal & Soil Restoration for Africa
             </h1>
-            <p className="text-lg md:text-xl text-[#6D4C41] mb-8 max-w-xl">
-              {"We're"} transforming invasive plants into biochar, removing carbon
-              from the atmosphere, and improving soil health for farmers across
-              Africa.
-            </p>
+           <p className="text-lg md:text-xl text-[#6D4C41] mb-8 max-w-xl">
+            {"We're"} transforming invasive plants into biochar, removing carbon from the atmosphere,
+            restoring soil fertility, and helping communities build resilience against climate change
+            across Africa.
+          </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#how-it-works" className="bg-[#1B5E20] text-white px-6 py-3 rounded-md font-medium hover:bg-[#154a1a] transition-colors inline-flex items-center justify-center">
                 Explore Our Work
