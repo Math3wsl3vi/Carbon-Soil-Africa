@@ -5,14 +5,12 @@ const Hero = () => {
   return <section className="relative w-full bg-[#F5F5DC] pt-24 pb-16 md:pt-32 md:pb-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="md:w-1/2 mb-10 md:mb-0">
+          <div className="md:w-1/2 mb-20 md:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1B5E20] mb-6">
-              Closing the Loop: Carbon Removal & Soil Restoration for Africa
+              Healing Soils and Securing Futures.
             </h1>
            <p className="text-lg md:text-xl text-[#6D4C41] mb-8 max-w-xl">
-            {"We're"} transforming invasive plants into biochar, removing carbon from the atmosphere,
-            restoring soil fertility, and helping communities build resilience against climate change
-            across Africa.
+            Remove, Reduce, Restore and Mitigate.
           </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#how-it-works" className="bg-[#1B5E20] text-white px-6 py-3 rounded-md font-medium hover:bg-[#154a1a] transition-colors inline-flex items-center justify-center">
