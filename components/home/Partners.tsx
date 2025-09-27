@@ -41,13 +41,13 @@ const Partners = () => {
   }, {
     id: 2,
     quote: 'Working with Carbon & Soil Loop has allowed our company to offset our carbon footprint with high-quality, verifiable credits while supporting African communities. Their transparent approach gives us confidence in the impact of our investment.',
-    name: 'Michael Chen',
+    name: 'John Kangogo',
     role: 'Co-Founder',
     image: '/images/user.png'
   }, {
     id: 3,
     quote: "The community biochar collection program has created jobs for youth in our village. We're removing invasive plants that were a fire hazard while earning income and helping the environment.",
-    name: 'Samuel Osei',
+    name: 'John Kangogo',
     role: 'Co-Founder',
     image: '/images/user.png'
   }];
