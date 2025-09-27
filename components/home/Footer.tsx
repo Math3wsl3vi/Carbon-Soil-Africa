@@ -40,24 +40,40 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <Mail size={18} className="mr-2 mt-0.5 flex-shrink-0" />
-                <span>hello@carbonsoilloop.africa</span>
-              </li>
-              <li className="flex items-start">
-                <Phone size={18} className="mr-2 mt-0.5 flex-shrink-0" />
-                <span>+254 (0) 712 345 678</span>
-              </li>
-              <li className="flex items-start">
-                <MapPin size={18} className="mr-2 mt-0.5 flex-shrink-0" />
-                <span>
-                  Nairobi, Kenya
-                </span>
-              </li>
-            </ul>
-          </div>
+                <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <Mail size={18} className="mr-2 mt-0.5 flex-shrink-0" />
+                    <a 
+                      href="mailto:info@carbonsoil.africa" 
+                      className="hover:underline"
+                    >
+                      info@carbonsoil.africa
+                    </a>
+                  </li>
+                  <li className="flex items-start">
+                    <Phone size={18} className="mr-2 mt-0.5 flex-shrink-0" />
+                    <a 
+                      href="tel:+254712345678" 
+                      className="hover:underline"
+                    >
+                      +254 (0) 712 345 678
+                    </a>
+                  </li>
+                  <li className="flex items-start">
+                    <MapPin size={18} className="mr-2 mt-0.5 flex-shrink-0" />
+                    <a 
+                      href="https://www.google.com/maps/place/Marigat,+Kenya" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="hover:underline"
+                    >
+                      Marigat, Kenya
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
