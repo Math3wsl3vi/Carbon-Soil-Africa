@@ -53,9 +53,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-0.5 flex-shrink-0" />
                 <span>
-                  Nairobi, Kenya (HQ)
-                  <br />
-                  With operations across East & West Africa
+                  Nairobi, Kenya
                 </span>
               </li>
             </ul>

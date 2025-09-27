@@ -5,51 +5,51 @@ const Partners = () => {
     id: 1,
     name: 'GreenTech Fund',
     type: 'Investor',
-    logo: 'https://via.placeholder.com/150x80?text=GreenTech'
+    logo: '/images/test.png'
   }, {
     id: 2,
     name: 'Africa Climate Foundation',
     type: 'NGO',
-    logo: 'https://via.placeholder.com/150x80?text=ACF'
+    logo: '/images/test.png'
   }, {
     id: 3,
     name: 'AgriInnovate',
     type: 'Research',
-    logo: 'https://via.placeholder.com/150x80?text=AgriInnovate'
+    logo: '/images/test.png'
   }, {
     id: 4,
     name: 'Sustainable Future',
     type: 'Corporate',
-    logo: 'https://via.placeholder.com/150x80?text=SF'
+    logo: '/images/test.png'
   }, {
     id: 5,
     name: 'EcoVentures',
     type: 'Investor',
-    logo: 'https://via.placeholder.com/150x80?text=EcoVentures'
+    logo: '/images/test.png'
   }, {
     id: 6,
     name: 'Farmers Alliance',
     type: 'Community',
-    logo: 'https://via.placeholder.com/150x80?text=FA'
+    logo: '/images/test.png'
   }];
   const testimonials = [{
     id: 1,
     quote: "Since using biochar from Carbon & Soil Loop, my maize yields have increased by 30%. The soil retains water better during dry spells, and I've been able to reduce my fertilizer use.",
-    name: 'Grace Mwangi',
-    role: 'Smallholder Farmer, Kenya',
-    image: 'https://images.unsplash.com/photo-1530021232320-687d8e3dba54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'
+    name: 'John Kangogo',
+    role: 'Founder',
+    image: '/images/user.png'
   }, {
     id: 2,
     quote: 'Working with Carbon & Soil Loop has allowed our company to offset our carbon footprint with high-quality, verifiable credits while supporting African communities. Their transparent approach gives us confidence in the impact of our investment.',
     name: 'Michael Chen',
     role: 'Sustainability Director, GreenTech Solutions',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'
+    image: '/images/user.png'
   }, {
     id: 3,
     quote: "The community biochar collection program has created jobs for youth in our village. We're removing invasive plants that were a fire hazard while earning income and helping the environment.",
     name: 'Samuel Osei',
     role: 'Community Leader, Ghana',
-    image: 'https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80'
+    image: '/images/user.png'
   }];
   return <section id="partners" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
@@ -74,7 +74,7 @@ const Partners = () => {
             </div>)}
         </div>
         <h3 className="text-2xl font-bold text-[#1B5E20] mb-8 text-center">
-          What People Say
+          Founders and the Team
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map(testimonial => <div key={testimonial.id} className="bg-[#F5F5DC] p-6 rounded-lg">

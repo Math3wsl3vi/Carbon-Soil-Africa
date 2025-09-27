@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Building, Tractor, Users, Gift, Check } from 'lucide-react';
+import { Building, Tractor, Users, Check } from 'lucide-react';
 const GetInvolved = () => {
   const [activeTab, setActiveTab] = useState('corporate');
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -69,10 +69,6 @@ const GetInvolved = () => {
             <button className={`px-6 py-4 font-medium focus:outline-none ${activeTab === 'community' ? 'text-[#1B5E20] border-b-2 border-[#1B5E20]' : 'text-gray-600 hover:text-[#1B5E20]'}`} onClick={() => handleTabChange('community')}>
               <Users size={18} className="inline mr-2" />
               For Communities
-            </button>
-            <button className={`px-6 py-4 font-medium focus:outline-none ${activeTab === 'donor' ? 'text-[#1B5E20] border-b-2 border-[#1B5E20]' : 'text-gray-600 hover:text-[#1B5E20]'}`} onClick={() => handleTabChange('donor')}>
-              <Gift size={18} className="inline mr-2" />
-              For Donors
             </button>
           </div>
           <div className="p-6 md:p-8">
@@ -242,65 +238,6 @@ const GetInvolved = () => {
                       <li className="flex items-start">
                         <Check size={18} className="text-[#1B5E20] mr-2 mt-0.5 flex-shrink-0" />
                         <span>Environmental improvement in local area</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>}
-            {activeTab === 'donor' && <div>
-                <h3 className="text-xl font-bold text-[#1B5E20] mb-4">
-                  Support Our Mission
-                </h3>
-                <p className="text-gray-700 mb-6">
-                  Help us scale our impact through donations that support
-                  research, community programs, and infrastructure development.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <h4 className="font-bold text-[#6D4C41] mb-2">
-                      Ways to Support
-                    </h4>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <Check size={18} className="text-[#1B5E20] mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Financial donations to specific projects</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check size={18} className="text-[#1B5E20] mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Equipment and technology contributions</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check size={18} className="text-[#1B5E20] mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Expertise and knowledge sharing</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check size={18} className="text-[#1B5E20] mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Advocacy and awareness raising</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-[#6D4C41] mb-2">
-                      Impact of Your Support
-                    </h4>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <Check size={18} className="text-[#1B5E20] mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Expand to new regions across Africa</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check size={18} className="text-[#1B5E20] mr-2 mt-0.5 flex-shrink-0" />
-                        <span>
-                          Develop improved biochar production technologies
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check size={18} className="text-[#1B5E20] mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Support research on biochar applications</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check size={18} className="text-[#1B5E20] mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Train more farmers and community members</span>
                       </li>
                     </ul>
                   </div>

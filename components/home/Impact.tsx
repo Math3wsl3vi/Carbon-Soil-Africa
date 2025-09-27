@@ -2,11 +2,10 @@
 import React, { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import { MapPin, Leaf, Users, Sprout } from 'lucide-react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
 
 const Impact = () => {
   const [inView, setInView] = useState(false);
+
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       if (entries[0].isIntersecting) {
@@ -25,49 +24,9 @@ const Impact = () => {
       }
     };
   }, []);
-  // Sample impact sites across Africa
-  const impactSites = [{
-    id: 1,
-    name: 'Nairobi Region',
-    country: 'Kenya',
-    lat: -1.286389,
-    lng: 36.817223,
-    farmers: 120,
-    hectares: 350
-  }, {
-    id: 2,
-    name: 'Addis Ababa Region',
-    country: 'Ethiopia',
-    lat: 9.145,
-    lng: 40.489673,
-    farmers: 85,
-    hectares: 230
-  }, {
-    id: 3,
-    name: 'Accra Region',
-    country: 'Ghana',
-    lat: 5.603717,
-    lng: -0.186964,
-    farmers: 75,
-    hectares: 180
-  }, {
-    id: 4,
-    name: 'Kampala Region',
-    country: 'Uganda',
-    lat: 0.347596,
-    lng: 32.58252,
-    farmers: 110,
-    hectares: 290
-  }, {
-    id: 5,
-    name: 'Lagos Region',
-    country: 'Nigeria',
-    lat: 6.465422,
-    lng: 3.406448,
-    farmers: 110,
-    hectares: 150
-  }];
-  return <section id="impact" className="py-16 md:py-24 bg-white">
+
+  return (
+    <section id="impact" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B5E20] mb-4">
@@ -116,30 +75,6 @@ const Impact = () => {
             <p className="text-gray-700">Countries</p>
           </div>
         </div>
-        <div className="bg-[#F5F5DC] p-4 md:p-6 rounded-lg mb-16">
-          <h3 className="text-2xl font-bold text-[#1B5E20] mb-4 text-center">
-            Our Impact Across Africa
-          </h3>
-          <div className="h-96 rounded-lg overflow-hidden">
-            {typeof window !== 'undefined' && <MapContainer center={[4.0, 21.0]} zoom={3} style={{
-            height: '100%',
-            width: '100%'
-          }} scrollWheelZoom={false}>
-                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' />
-                {impactSites.map(site => <Marker key={site.id} position={[site.lat, site.lng]}>
-                    <Popup>
-                      <div>
-                        <h4 className="font-bold">
-                          {site.name}, {site.country}
-                        </h4>
-                        <p>Farmers: {site.farmers}</p>
-                        <p>Hectares: {site.hectares}</p>
-                      </div>
-                    </Popup>
-                  </Marker>)}
-              </MapContainer>}
-          </div>
-        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
             <h3 className="text-xl font-bold text-[#1B5E20] mb-4">
@@ -154,9 +89,7 @@ const Impact = () => {
                   <span className="text-[#1B5E20] font-medium">85%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
-                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{
-                  width: '85%'
-                }}></div>
+                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{ width: '85%' }}></div>
                 </div>
               </div>
               <div>
@@ -167,9 +100,7 @@ const Impact = () => {
                   <span className="text-[#1B5E20] font-medium">72%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
-                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{
-                  width: '72%'
-                }}></div>
+                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{ width: '72%' }}></div>
                 </div>
               </div>
               <div>
@@ -178,9 +109,7 @@ const Impact = () => {
                   <span className="text-[#1B5E20] font-medium">63%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
-                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{
-                  width: '63%'
-                }}></div>
+                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{ width: '63%' }}></div>
                 </div>
               </div>
             </div>
@@ -196,9 +125,7 @@ const Impact = () => {
                   <span className="text-[#1B5E20] font-medium">45%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
-                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{
-                  width: '45%'
-                }}></div>
+                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{ width: '45%' }}></div>
                 </div>
               </div>
               <div>
@@ -207,9 +134,7 @@ const Impact = () => {
                   <span className="text-[#1B5E20] font-medium">78%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
-                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{
-                  width: '78%'
-                }}></div>
+                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{ width: '78%' }}></div>
                 </div>
               </div>
               <div>
@@ -218,15 +143,15 @@ const Impact = () => {
                   <span className="text-[#1B5E20] font-medium">56%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
-                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{
-                  width: '56%'
-                }}></div>
+                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{ width: '56%' }}></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Impact;

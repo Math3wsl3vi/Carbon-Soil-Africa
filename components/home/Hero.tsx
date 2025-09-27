@@ -29,7 +29,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80')] bg-cover bg-center opacity-60"></div>
               <div className="z-10 text-white text-center p-6">
                 <div className="w-32 h-32 md:w-40 md:h-40 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Image src={'/images/logo3.jpeg'} width={150} height={150} alt="Logo" className="rounded-full w-full" />
+                  <Image src={'/images/logo6.png'} width={150} height={150} alt="Logo" className="rounded-full w-full object-cover" />
                 </div>
                 <h2 className="text-xl md:text-2xl font-bold">
                   Carbon & Soil Loop Africa
