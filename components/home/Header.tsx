@@ -30,7 +30,7 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <div className="flex items-center">
           <a href="#" className="text-2xl font-bold text-[#1B5E20]">
-            Carbon & Soil Loop
+            Carbon & Soil Loop Africa
           </a>
         </div>
         

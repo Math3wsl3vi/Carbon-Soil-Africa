@@ -19,10 +19,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">Carbon & Soil Loop</h3>
+            <h3 className="text-xl font-bold mb-4">Carbon & Soil Loop Africa</h3>
             <p className="mb-4 text-gray-200">
-              Closing the loop on carbon removal and soil restoration across
-              Africa through biochar production and regenerative agriculture.
+             Remove, Reduce, Restore and Mitigate.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-gray-200" aria-label="Facebook">
