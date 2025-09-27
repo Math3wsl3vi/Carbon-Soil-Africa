@@ -1,97 +1,112 @@
-# 🚀 Delivery App
+# 🌍 Carbon & Soil Loop Africa
 
-A simple and efficient food delivery platform built with **Next.js, TypeScript, Firebase, Zustand, and Twilio**. This project was developed as a **1-day coding challenge** to test rapid development skills while ensuring functionality and a great user experience.
+Closing the loop: **Carbon Removal & Soil Restoration for Africa**
 
----
-
-## 📌 Features
-
-✅ **User Authentication** (Firebase Auth)  
-✅ **Browse Food Items** from various restaurants  
-✅ **Add to Cart** and manage orders  
-✅ **Update Quantity** or Remove Items  
-✅ **Order Summary with Total Price Calculation**  
-✅ **WhatsApp Order Notifications** via Twilio  
-✅ **Responsive Design** for mobile and desktop  
+We are transforming invasive plants into **biochar**, removing carbon from the atmosphere, and improving soil health for farmers across Africa.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Project Overview
 
-- **Next.js** (App Router)
-- **TypeScript**
-- **Firebase** (Auth & Firestore)
-- **Zustand** (State Management)
-- **Twilio API** (WhatsApp Order Notifications)
-- **Tailwind CSS** (Styling)
+This platform is built to:
+
+* Educate communities on carbon removal & soil restoration.
+* Showcase our work with biochar and regenerative farming.
+* Provide opportunities for partners, investors, and volunteers to get involved.
 
 ---
 
-## 🔧 Installation & Setup
+## 🛠 Tech Stack
 
-1️⃣ Clone the repository:
+* **Frontend**: [Next.js](https://nextjs.org/) + [React](https://react.dev/)
+* **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+* **Icons**: [Lucide](https://lucide.dev/)
+* **Fonts**: Local fonts with `next/font/local`
+* **Deployment**: [Vercel](https://vercel.com/)
+
+---
+
+## 📂 Project Structure
+
+```
+carbon-soil/
+├── app/               # Next.js App Router pages
+├── components/        # Reusable UI components
+├── public/            # Fonts, images, and static assets
+├── styles/            # Global styles
+└── next.config.js     # Next.js configuration
+```
+
+---
+
+## 🔧 Getting Started
+
+### 1. Clone the repository
+
 ```bash
-git clone https://github.com/yourusername/delivery-app.git
-cd delivery-app
+git clone https://github.com/your-username/carbon-soil.git
+cd carbon-soil
 ```
 
-2️⃣ Install dependencies:
+### 2. Install dependencies
+
 ```bash
-yarn install  # or npm install
+npm install
+# or
+yarn install
 ```
 
-3️⃣ Set up environment variables in a `.env.local` file:
-```env
-NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-TWILIO_ACCOUNT_SID=your_twilio_sid
-TWILIO_AUTH_TOKEN=your_twilio_auth_token
-TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886
-MY_WHATSAPP_NUMBER=whatsapp:+2547XXXXXXXX
-```
+### 3. Run the development server
 
-4️⃣ Run the development server:
 ```bash
-yarn dev  # or npm run dev
+npm run dev
+# or
+yarn dev
 ```
 
----
-
-## 📱 How It Works
-
-1. **User adds food items to the cart**
-2. **User enters their phone number & address**
-3. **Order is sent via WhatsApp using Twilio API**
-4. **Restaurant receives the order and processes it**
-5. **Delivery is made! 🚴‍♂️💨**
+Then open [http://localhost:3000](http://localhost:3000) 🚀
 
 ---
 
-## 📌 Future Improvements
+## 📸 Screenshots
 
-- ✅ Add Payment Gateway (M-Pesa, Stripe)
-- ✅ Implement Order Tracking System
-- ✅ Enhance UI/UX with better animations
-- ✅ Improve backend scalability
-
----
-
-## 🏆 Challenge Outcome
-
-This app was built as a **1-day challenge** to test efficiency, creativity, and technical skills. The goal was to implement a **functional MVP (Minimum Viable Product)** within **24 hours** while maintaining clean, structured code.
-
-🚀 **Mission Accomplished!** 💪🔥
+| Hero Section                                    | About Us                                          |
+| ----------------------------------------------- | ------------------------------------------------- |
+| ![Hero Screenshot](public/screenshots/hero.png) | ![About Screenshot](public/screenshots/about.png) |
 
 ---
 
-## 📝 License
+## 🌱 Contributing
 
-This project is open-source and available under the **MIT License**.
+We welcome contributions from developers, designers, and climate enthusiasts!
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
 
 ---
 
-### 💡 Need Help?
-Feel free to open an issue or reach out! 😊
+## 🤝 Partners
 
-Happy Hacking!
+We collaborate with organizations in **sustainability, climate action, and agriculture**. Interested in partnering? Reach out below.
+
+---
+
+## 📬 Contact
+
+📧 Email: **[contact@carbonsoil.africa](mailto:contact@carbonsoil.africa)**
+🌐 Website: [carbonsoil.africa](https://carbonsoil.africa)
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** – feel free to use and adapt.
+
+---
+
+✨ *Together, we can restore African soils and remove carbon sustainably.* 🌍
+
+
