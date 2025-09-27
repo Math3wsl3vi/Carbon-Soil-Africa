@@ -14,27 +14,24 @@ const AboutUs = () => {
             agriculture practices.
           </p>
         </div>
+
+        {/* Mission / Vision / Values */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <div className="bg-[#F5F5DC] p-8 rounded-lg text-center">
             <div className="w-16 h-16 bg-[#1B5E20] rounded-full flex items-center justify-center mx-auto mb-4">
               <Leaf size={32} className="text-white" />
             </div>
-            <h3 className="text-xl font-bold text-[#1B5E20] mb-2">
-              Our Mission
-            </h3>
+            <h3 className="text-xl font-bold text-[#1B5E20] mb-2">Our Mission</h3>
             <p className="text-gray-700">
-              To combat climate change by removing carbon dioxide from the
-              atmosphere while improving soil health and supporting local
-              communities.
+              To combat climate change by removing carbon dioxide from the atmosphere 
+              while improving soil health and supporting local communities.
             </p>
           </div>
           <div className="bg-[#F5F5DC] p-8 rounded-lg text-center">
             <div className="w-16 h-16 bg-[#1B5E20] rounded-full flex items-center justify-center mx-auto mb-4">
               <Heart size={32} className="text-white" />
             </div>
-            <h3 className="text-xl font-bold text-[#1B5E20] mb-2">
-              Our Vision
-            </h3>
+            <h3 className="text-xl font-bold text-[#1B5E20] mb-2">Our Vision</h3>
             <p className="text-gray-700">
               A regenerative agricultural system across Africa that closes the
               carbon loop, restores degraded lands, and creates sustainable
@@ -45,20 +42,36 @@ const AboutUs = () => {
             <div className="w-16 h-16 bg-[#1B5E20] rounded-full flex items-center justify-center mx-auto mb-4">
               <Users size={32} className="text-white" />
             </div>
-            <h3 className="text-xl font-bold text-[#1B5E20] mb-2">
-              Our Values
-            </h3>
+            <h3 className="text-xl font-bold text-[#1B5E20] mb-2">Our Values</h3>
             <p className="text-gray-700">
               Community-centered, environmentally sustainable, scientifically
               rigorous, and committed to creating lasting positive impact.
             </p>
           </div>
         </div>
+
+        {/* Climate Change Challenge Section */}
+        <div className="bg-[#E8F5E9] p-8 rounded-lg mb-16">
+          <h3 className="text-2xl font-bold text-[#1B5E20] mb-4 text-center">
+            The Climate Change Challenge
+          </h3>
+          <p className="text-gray-700 max-w-4xl mx-auto">
+            Africa is among the most vulnerable regions to climate change, facing 
+            rising temperatures, unpredictable rainfall, and declining agricultural 
+            productivity. Greenhouse gas emissions continue to drive global warming, 
+            but solutions that both remove carbon and restore ecosystems remain scarce.  
+            <br /><br />
+            Our approach—transforming invasive plants into biochar—offers a 
+            nature-based solution that not only locks away carbon for centuries but 
+            also improves soil fertility, enhances water retention, and boosts food 
+            security for local farmers.
+          </p>
+        </div>
+
+        {/* Story Section */}
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-            <h3 className="text-2xl font-bold text-[#1B5E20] mb-4">
-              Our Story
-            </h3>
+            <h3 className="text-2xl font-bold text-[#1B5E20] mb-4">Our Story</h3>
             <p className="text-gray-700 mb-4">
               Carbon & Soil Loop Africa was founded in response to two critical
               challenges: the spread of invasive plant species across African
@@ -78,14 +91,14 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="md:w-1/2">
-           <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
+            <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1600367051858-9cc795d50a52?w=1200&auto=format&fit=crop&q=90&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFpemUlMjBmYXJtfGVufDB8fDB8fHww" 
+                src="https://images.unsplash.com/photo-1600367051858-9cc795d50a52?w=1200&auto=format&fit=crop&q=90&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFpemUlMjBmYXJtfGVufDB8fDB8fHww"
                 width={1200}
                 height={720}
-                alt="African farmers working in a field" 
+                alt="African farmers working in a field"
                 className="w-full h-full object-cover"
-                priority={true} // Adds loading priority
+                priority={true}
               />
             </div>
           </div>
