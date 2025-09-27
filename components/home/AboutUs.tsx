@@ -78,12 +78,15 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="md:w-1/2">
-            <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
+           <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
               <Image
-               src="https://images.unsplash.com/photo-1569880153113-76e33fc52d5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-               width={1470}
-               height={960}
-               alt="African farmers working in a field" className="w-full h-full object-cover" />
+                src="https://images.unsplash.com/photo-1600367051858-9cc795d50a52?w=1200&auto=format&fit=crop&q=90&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFpemUlMjBmYXJtfGVufDB8fDB8fHww" 
+                width={1200}
+                height={720}
+                alt="African farmers working in a field" 
+                className="w-full h-full object-cover"
+                priority={true} // Adds loading priority
+              />
             </div>
           </div>
         </div>

@@ -64,9 +64,10 @@ const HowItWorks = () => {
                 </p>
               </div>
             </div>
-            <div className="flex justify-between mt-16">
-              <div className="flex flex-col items-center w-1/3">
-                <div className="w-20 h-20 bg-[#1B5E20] rounded-full flex items-center justify-center mb-4">
+            <div className="flex justify-center mt-16">
+              <div className="flex items-center w-1/3 gap-32">
+               <div className='flex flex-col items-center'>
+                 <div className="w-20 h-20 bg-[#1B5E20] rounded-full flex items-center justify-center mb-4">
                   <Sprout size={36} className="text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[#1B5E20] mb-2 text-center">
@@ -75,10 +76,11 @@ const HowItWorks = () => {
                 <p className="text-gray-700 text-center">
                   Farmers apply biochar to improve soil
                 </p>
-                <ArrowRight size={36} className="text-[#6D4C41] transform -rotate-90 mt-4" />
+                </div>
+                <ArrowRight size={36} className="text-[#6D4C41] transform -rotate-0 mt-4" />
               </div>
               <div className="flex flex-col items-center w-1/3">
-                <ArrowRight size={36} className="text-[#6D4C41] transform rotate-90 mb-4" />
+                {/* <ArrowRight size={36} className="text-[#6D4C41] transform rotate-90 mb-4" /> */}
                 <div className="w-20 h-20 bg-[#1B5E20] rounded-full flex items-center justify-center mb-4">
                   <CreditCard size={36} className="text-white" />
                 </div>
