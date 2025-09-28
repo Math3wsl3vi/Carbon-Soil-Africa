@@ -20,7 +20,7 @@ const Partners = () => {
       image: "/images/user.png",
       education: [
         "Ph.D. Environmental Planning and Management (Climate Change Adaptation)",
-        "MSc. Environmental Science",
+        "MSc. Environmental Governance",
         "BSc. Environmental Conservation & Natural Resource Management (Hons.)",
       ],
     },
