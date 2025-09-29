@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Check } from 'lucide-react';
+import Link from 'next/link';
 const Footer = () => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
@@ -132,9 +133,9 @@ const Footer = () => {
             © {new Date().getFullYear()} Carbon & Soil Loop Africa. All rights
             reserved.
           </p>
-          <p>
+          <Link href={'https://mantlekenya.vercel.app/'} target="_blank" className="hover:underline mt-2">
             Powered by MantleKenya©
-          </p>
+          </Link>
           <div className="mt-2 space-x-4">
             <a href="#" className="hover:text-white">
               Privacy Policy
