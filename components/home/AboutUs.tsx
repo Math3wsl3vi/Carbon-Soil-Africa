@@ -1,8 +1,10 @@
 import React from 'react';
 import { Leaf, Heart, Users } from 'lucide-react';
 import Image from 'next/image';
+
 const AboutUs = () => {
-  return <section id="about" className="py-16 md:py-24 bg-white">
+  return (
+    <section id="about" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B5E20] mb-4">
@@ -23,8 +25,7 @@ const AboutUs = () => {
             </div>
             <h3 className="text-xl font-bold text-[#1B5E20] mb-2">Our Mission</h3>
             <p className="text-gray-700">
-              To combat climate change by removing carbon dioxide from the atmosphere 
-              while improving soil health and supporting local communities.
+              To restore grasslands, soils, and water systems while empowering communities—especially women and youth—through sustainable, climate-smart solutions.
             </p>
           </div>
           <div className="bg-[#F5F5DC] p-8 rounded-lg text-center">
@@ -69,14 +70,11 @@ const AboutUs = () => {
         </div>
 
         {/* Story Section */}
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col md:flex-row items-center mb-16">
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
             <h3 className="text-2xl font-bold text-[#1B5E20] mb-4">Our Story</h3>
             <p className="text-gray-700 mb-4">
-              Carbon & Soil Loop Africa was founded in response to two critical
-              challenges: the spread of invasive plant species across African
-              landscapes and declining soil health affecting smallholder
-              farmers.
+              Carbon and Soil Loop Africa was founded by two youth leaders driven by the vision of turning today’s environmental challenges into tomorrow’s opportunities. By transforming invasive species into resources, we improve agricultural yields, restore degraded ecosystems, and contribute to climate change mitigation through carbon sequestration.
             </p>
             <p className="text-gray-700 mb-4">
               We developed an innovative solution that transforms these invasive
@@ -103,7 +101,25 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
+
+        {/* CEO Message Section */}
+        <div className="bg-[#F5F5DC] p-8 rounded-lg">
+          <h3 className="text-2xl font-bold text-[#1B5E20] mb-6 text-center">
+            Message from the CEO – Dr. Sylvia Jemutai Rotich
+          </h3>
+          <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            “I come from an agricultural community. Growing up, I witnessed farmers—my father included—struggle with the rising cost of fertilizers, erratic rainfall, and declining yields. These challenges, worsened by climate change, planted in me the seed of finding a sustainable solution.
+            <br /><br />
+            As an environmental scientist working in ASAL counties during my research, I was struck by the alarming spread of invasive species such as Prosopis. Instead of seeing them only as a problem, I asked myself: what if this challenge could hold the solution?
+            <br /><br />
+            I reached out to my COO, and together we envisioned a model where invasive species could be transformed into biochar—restoring degraded soils, improving water retention, and sequestering carbon. More importantly, we saw this as a way to co-create solutions with farmers, partners, and communities.
+            <br /><br />
+            Our greatest inspiration has been women farmers, many of whom struggle daily to feed their families from degraded land. Through innovation, collaboration, and resilience, we are committed to offering them a lasting solution that restores hope, dignity, and productivity to their soils and lives.”
+          </p>
+        </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default AboutUs;

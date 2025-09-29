@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-20 md:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1B5E20] mb-6">
-              Healing Soils and Securing Futures.
+              Healing Soils, Unleashing Potential.
             </h1>
            <p className="text-lg md:text-xl text-[#6D4C41] mb-8 max-w-xl">
             Remove, Reduce, Restore and Mitigate.

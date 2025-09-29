@@ -14,7 +14,6 @@ const Partners = () => {
   const testimonials = [
     {
       id: 1,
-      quote: "Since using biochar from Carbon & Soil Loop, my maize yields have increased by 30%. The soil retains water better during dry spells, and I've been able to reduce my fertilizer use.",
       name: "Dr. Sylvia Jemutai Rotich",
       role: "CEO, Carbon & Soil Loop Africa",
       image: "/images/user.png",
@@ -26,7 +25,6 @@ const Partners = () => {
     },
     {
       id: 2,
-      quote: "Working with Carbon & Soil Loop has allowed our company to offset our carbon footprint with high-quality, verifiable credits while supporting African communities. Their transparent approach gives us confidence in the impact of our investment.",
       name: "Jeruto Kosgey",
       role: "COO, Carbon & Soil Loop Africa",
       image: "/images/user.png",
@@ -96,9 +94,6 @@ const Partners = () => {
                   <p className="text-sm text-gray-600">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="text-gray-700 italic mb-4">
-                &quot;{testimonial.quote}&quot;
-              </p>
               {testimonial.education && (
                 <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
                   {testimonial.education.map((edu, idx) => (
