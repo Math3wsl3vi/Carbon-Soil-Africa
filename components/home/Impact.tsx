@@ -70,9 +70,9 @@ const Impact = () => {
               <MapPin size={32} className="text-white" />
             </div>
             <div className="text-4xl md:text-5xl font-bold text-[#1B5E20] mb-2">
-              {inView ? <CountUp end={5} duration={2.5} /> : '0'}
+              {inView ? <CountUp end={7} duration={2.5} /> : '0'}
             </div>
-            <p className="text-gray-700">Countries</p>
+            <p className="text-gray-700">Counties</p>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

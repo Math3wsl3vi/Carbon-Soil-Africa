@@ -11,9 +11,7 @@ const AboutUs = () => {
             About Us
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            {"We're"} on a mission to restore soil health and remove carbon from the
-            atmosphere through sustainable biochar production and regenerative
-            agriculture practices.
+            {"We're"} on a mission to Remove invasive weeds, Reduce wastes, Restore degraded land, and Mitigate climate change through carbon sequestration enabled by sustainable biochar production and value additions.
           </p>
         </div>
 
@@ -25,7 +23,7 @@ const AboutUs = () => {
             </div>
             <h3 className="text-xl font-bold text-[#1B5E20] mb-2">Our Mission</h3>
             <p className="text-gray-700">
-              To restore grasslands, soils, and water systems while empowering communities—especially women and youth—through sustainable, climate-smart solutions.
+              To restore grasslands, soils, and water systems while empowering communities—especially women and youth—through sustainable, climate-smart solutions, turning invasive species and waste into biochar innovations that heal soils, store carbon, and sustain livelihoods
             </p>
           </div>
           <div className="bg-[#F5F5DC] p-8 rounded-lg text-center">
@@ -34,9 +32,7 @@ const AboutUs = () => {
             </div>
             <h3 className="text-xl font-bold text-[#1B5E20] mb-2">Our Vision</h3>
             <p className="text-gray-700">
-              A regenerative agricultural system across Africa that closes the
-              carbon loop, restores degraded lands, and creates sustainable
-              livelihoods.
+              A climate-resilient Africa with restored ecosystems and thriving communities.
             </p>
           </div>
           <div className="bg-[#F5F5DC] p-8 rounded-lg text-center">
@@ -45,8 +41,7 @@ const AboutUs = () => {
             </div>
             <h3 className="text-xl font-bold text-[#1B5E20] mb-2">Our Values</h3>
             <p className="text-gray-700">
-              Community-centered, environmentally sustainable, scientifically
-              rigorous, and committed to creating lasting positive impact.
+              Community-centered, environmentally sustainable, scientifically rigorous, and committed to creating lasting positive impact — guided by sustainability, innovation, integrity, equity, collaboration, and resilience to empower people, restore balance with nature, and build thriving ecosystems
             </p>
           </div>
         </div>
