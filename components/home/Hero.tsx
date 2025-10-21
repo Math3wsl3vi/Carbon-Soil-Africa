@@ -69,7 +69,7 @@ export default function Hero() {
               className="object-cover rounded-full"
             />
           </div> */}
-          <h2 className="text-white text-2xl md:text-7xl font-bold drop-shadow-lg">
+          <h2 className="text-white text-3xl md:text-7xl font-bold drop-shadow-lg">
             Carbon & Soil Loop Africa
           </h2>
         </div>
