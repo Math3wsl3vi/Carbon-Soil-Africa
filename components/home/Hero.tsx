@@ -2,7 +2,6 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 
 export default function Hero() {
   // Scroll animations
