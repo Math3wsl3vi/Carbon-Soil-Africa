@@ -1,24 +1,11 @@
 "use client";
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Check } from 'lucide-react';
+import React from 'react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 const Footer = () => {
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // In a real implementation, this would subscribe the user to a newsletter
-    console.log('Subscribed:', email);
-    setSubscribed(true);
-    // Reset after 3 seconds
-    setTimeout(() => {
-      setSubscribed(false);
-      setEmail('');
-    }, 3000);
-  };
   return <footer className="bg-[#1B5E20] text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mb-12">
           <div>
             <h3 className="text-xl font-bold mb-4">Carbon & Soil Loop Africa</h3>
             <p className="mb-4 text-gray-200">
@@ -108,24 +95,6 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-4">Newsletter</h3>
-            <p className="mb-4 text-gray-200">
-              Subscribe to our newsletter for updates on our projects, impact
-              stories, and opportunities.
-            </p>
-            {subscribed ? <div className="bg-green-800 p-3 rounded-md flex items-center">
-                <Check size={18} className="mr-2" />
-                <span>Thank you for subscribing!</span>
-              </div> : <form onSubmit={handleSubmit}>
-                <div className="flex">
-                  <input type="email" placeholder="Your email address" className="px-4 py-2 rounded-l-md w-full text-gray-800 focus:outline-none" value={email} onChange={e => setEmail(e.target.value)} required />
-                  <button type="submit" className="bg-[#6D4C41] text-white px-4 py-2 rounded-r-md hover:bg-[#5d4037] transition-colors">
-                    Subscribe
-                  </button>
-                </div>
-              </form>}
           </div>
         </div>
         <div className="pt-8 border-t border-green-800 text-center text-gray-300 text-sm">

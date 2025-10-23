@@ -1,20 +1,89 @@
 {
   "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-b3ff0847bc71c0ea.js",
+      "static/chunks/4bd1b696-993688ef59b04fe4.js",
+      "static/chunks/517-05ac455153e880a3.js",
+      "static/chunks/main-app-c9cf8e50eb0bd695.js",
+      "static/chunks/app/_not-found/page-f8df004844231004.js"
+    ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-b3ff0847bc71c0ea.js",
+      "static/chunks/4bd1b696-993688ef59b04fe4.js",
+      "static/chunks/517-05ac455153e880a3.js",
+      "static/chunks/main-app-c9cf8e50eb0bd695.js",
+      "static/css/1c326fb31a06a701.css",
+      "static/chunks/906-9afaab44df086685.js",
+      "static/chunks/919-d3938b98d5f6a023.js",
+      "static/chunks/app/layout-ab620b13fb4bdcb3.js"
+    ],
+    "/api/notify/route": [
+      "static/chunks/webpack-b3ff0847bc71c0ea.js",
+      "static/chunks/4bd1b696-993688ef59b04fe4.js",
+      "static/chunks/517-05ac455153e880a3.js",
+      "static/chunks/main-app-c9cf8e50eb0bd695.js",
+      "static/chunks/app/api/notify/route-385347508955dbe4.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-b3ff0847bc71c0ea.js",
+      "static/chunks/4bd1b696-993688ef59b04fe4.js",
+      "static/chunks/517-05ac455153e880a3.js",
+      "static/chunks/main-app-c9cf8e50eb0bd695.js",
+      "static/chunks/162-ecd56de03ddab7a6.js",
+      "static/chunks/970-bf1a8778d1cd2ad1.js",
+      "static/chunks/app/about/page-a3ea7fafe9660376.js"
+    ],
+    "/cart/page": [
+      "static/chunks/webpack-b3ff0847bc71c0ea.js",
+      "static/chunks/4bd1b696-993688ef59b04fe4.js",
+      "static/chunks/517-05ac455153e880a3.js",
+      "static/chunks/main-app-c9cf8e50eb0bd695.js",
+      "static/chunks/970-bf1a8778d1cd2ad1.js",
+      "static/chunks/906-9afaab44df086685.js",
+      "static/chunks/app/cart/page-20d0e5f72c55e0b3.js"
+    ],
+    "/get-involved/page": [
+      "static/chunks/webpack-b3ff0847bc71c0ea.js",
+      "static/chunks/4bd1b696-993688ef59b04fe4.js",
+      "static/chunks/517-05ac455153e880a3.js",
+      "static/chunks/main-app-c9cf8e50eb0bd695.js",
+      "static/chunks/162-ecd56de03ddab7a6.js",
+      "static/chunks/app/get-involved/page-7ad7707fc9a13cb9.js"
+    ],
+    "/login/page": [
+      "static/chunks/webpack-b3ff0847bc71c0ea.js",
+      "static/chunks/4bd1b696-993688ef59b04fe4.js",
+      "static/chunks/517-05ac455153e880a3.js",
+      "static/chunks/main-app-c9cf8e50eb0bd695.js",
+      "static/chunks/906-9afaab44df086685.js",
+      "static/chunks/app/login/page-89e37e9e4ff864c7.js"
     ],
     "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/webpack-b3ff0847bc71c0ea.js",
+      "static/chunks/4bd1b696-993688ef59b04fe4.js",
+      "static/chunks/517-05ac455153e880a3.js",
+      "static/chunks/main-app-c9cf8e50eb0bd695.js",
+      "static/chunks/162-ecd56de03ddab7a6.js",
+      "static/chunks/970-bf1a8778d1cd2ad1.js",
+      "static/chunks/955-4bccd2116546380e.js",
+      "static/chunks/app/page-d30aa0841599ab77.js"
     ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+    "/partners/page": [
+      "static/chunks/webpack-b3ff0847bc71c0ea.js",
+      "static/chunks/4bd1b696-993688ef59b04fe4.js",
+      "static/chunks/517-05ac455153e880a3.js",
+      "static/chunks/main-app-c9cf8e50eb0bd695.js",
+      "static/chunks/162-ecd56de03ddab7a6.js",
+      "static/chunks/970-bf1a8778d1cd2ad1.js",
+      "static/chunks/app/partners/page-6b7a9457cd4964ff.js"
+    ],
+    "/solutions/page": [
+      "static/chunks/webpack-b3ff0847bc71c0ea.js",
+      "static/chunks/4bd1b696-993688ef59b04fe4.js",
+      "static/chunks/517-05ac455153e880a3.js",
+      "static/chunks/main-app-c9cf8e50eb0bd695.js",
+      "static/chunks/162-ecd56de03ddab7a6.js",
+      "static/chunks/app/solutions/page-f2d389e77129acdc.js"
     ]
   }
 }

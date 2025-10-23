@@ -5,9 +5,8 @@ import AboutUs from '@/components/home/AboutUs';
 import HowItWorks from '@/components/home/HowItWorks';
 import Impact from '@/components/home/Impact';
 import Footer from '@/components/home/Footer';
-import Solutions from '@/components/home/Solutions';
-import GetInvolved from '@/components/home/GetInvolved';
-import Partners from '@/components/home/Partners';
+import { Gallery } from '@/components/home/Gallery';
+import Newsletter from '@/components/home/Newsletter';
 
 export default function HomePage() {
   return (
@@ -16,11 +15,10 @@ export default function HomePage() {
       <main>
         <Hero />
         <AboutUs />
+        <Gallery/>
         <HowItWorks />
         <Impact />
-        <Solutions />
-        <Partners />
-        <GetInvolved />
+        <Newsletter/>
       </main>
       <Footer />
     </div>

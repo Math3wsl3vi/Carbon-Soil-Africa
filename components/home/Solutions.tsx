@@ -1,8 +1,30 @@
-import React from 'react';
-import { Building, Tractor, Users, ArrowRight } from 'lucide-react';
+import React from "react";
+import { Building, Tractor, Users, ArrowRight } from "lucide-react";
+
 const Solutions = () => {
-  return <section id="solutions" className="py-16 md:py-24 bg-[#F5F5DC]">
-      <div className="container mx-auto px-4 md:px-6">
+  return (
+    <section id="solutions" className="bg-[#F5F5DC]">
+      {/* 🌾 Banner Section */}
+      <div
+        className="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('/images/windmill1.jpg')", // <-- Replace with your actual image path
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50" /> {/* dark overlay */}
+        <div className="relative text-center text-white px-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Building a Greener Future Together
+          </h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto">
+            Empowering Corporates, Farmers, and Communities through Sustainable Carbon and Soil Solutions.
+          </p>
+        </div>
+      </div>
+
+      {/* 🌱 Solutions Section */}
+      <div className="py-16 md:py-24 container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B5E20] mb-4">
             Our Solutions
@@ -12,9 +34,11 @@ const Solutions = () => {
             participate in the carbon and soil restoration loop.
           </p>
         </div>
+
+        {/* Cards Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* For Corporates */}
-          <div className="bg-white rounded-lg overflow-hidden shadow-sm transition-transform hover:transform hover:scale-105">
+          <div className="bg-white rounded-lg overflow-hidden shadow-sm transition-transform hover:scale-105">
             <div className="h-48 bg-[#1B5E20] flex items-center justify-center">
               <Building size={64} className="text-white" />
             </div>
@@ -29,35 +53,32 @@ const Solutions = () => {
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
                   <span className="text-[#1B5E20] mr-2">✓</span>
-                  <span className="text-gray-700">
-                    Verified carbon removal certificates
-                  </span>
+                  <span>Verified carbon removal certificates</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#1B5E20] mr-2">✓</span>
-                  <span className="text-gray-700">
-                    Transparent impact reporting
-                  </span>
+                  <span>Transparent impact reporting</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#1B5E20] mr-2">✓</span>
-                  <span className="text-gray-700">ESG compliance support</span>
+                  <span>ESG compliance support</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#1B5E20] mr-2">✓</span>
-                  <span className="text-gray-700">
-                    Marketing & storytelling assets
-                  </span>
+                  <span>Marketing & storytelling assets</span>
                 </li>
               </ul>
-              <a href="#get-involved" className="inline-flex items-center text-[#1B5E20] font-medium hover:underline">
-                Learn More
-                <ArrowRight size={16} className="ml-1" />
+              <a
+                href="#get-involved"
+                className="inline-flex items-center text-[#1B5E20] font-medium hover:underline"
+              >
+                Learn More <ArrowRight size={16} className="ml-1" />
               </a>
             </div>
           </div>
+
           {/* For Farmers */}
-          <div className="bg-white rounded-lg overflow-hidden shadow-sm transition-transform hover:transform hover:scale-105">
+          <div className="bg-white rounded-lg overflow-hidden shadow-sm transition-transform hover:scale-105">
             <div className="h-48 bg-[#1B5E20] flex items-center justify-center">
               <Tractor size={64} className="text-white" />
             </div>
@@ -72,35 +93,32 @@ const Solutions = () => {
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
                   <span className="text-[#1B5E20] mr-2">✓</span>
-                  <span className="text-gray-700">
-                    Premium biochar at subsidized rates
-                  </span>
+                  <span>Premium biochar at subsidized rates</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#1B5E20] mr-2">✓</span>
-                  <span className="text-gray-700">
-                    Training on application techniques
-                  </span>
+                  <span>Training on application techniques</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#1B5E20] mr-2">✓</span>
-                  <span className="text-gray-700">Soil health monitoring</span>
+                  <span>Soil health monitoring</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#1B5E20] mr-2">✓</span>
-                  <span className="text-gray-700">
-                    Access to regenerative farming network
-                  </span>
+                  <span>Access to regenerative farming network</span>
                 </li>
               </ul>
-              <a href="#get-involved" className="inline-flex items-center text-[#1B5E20] font-medium hover:underline">
-                Learn More
-                <ArrowRight size={16} className="ml-1" />
+              <a
+                href="#get-involved"
+                className="inline-flex items-center text-[#1B5E20] font-medium hover:underline"
+              >
+                Learn More <ArrowRight size={16} className="ml-1" />
               </a>
             </div>
           </div>
+
           {/* For Communities */}
-          <div className="bg-white rounded-lg overflow-hidden shadow-sm transition-transform hover:transform hover:scale-105">
+          <div className="bg-white rounded-lg overflow-hidden shadow-sm transition-transform hover:scale-105">
             <div className="h-48 bg-[#1B5E20] flex items-center justify-center">
               <Users size={64} className="text-white" />
             </div>
@@ -115,131 +133,33 @@ const Solutions = () => {
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
                   <span className="text-[#1B5E20] mr-2">✓</span>
-                  <span className="text-gray-700">
-                    Fair compensation for biomass collection
-                  </span>
+                  <span>Fair compensation for biomass collection</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#1B5E20] mr-2">✓</span>
-                  <span className="text-gray-700">
-                    Skills development opportunities
-                  </span>
+                  <span>Skills development opportunities</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#1B5E20] mr-2">✓</span>
-                  <span className="text-gray-700">
-                    Employment in processing centers
-                  </span>
+                  <span>Employment in processing centers</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#1B5E20] mr-2">✓</span>
-                  <span className="text-gray-700">
-                    Community development projects
-                  </span>
+                  <span>Community development projects</span>
                 </li>
               </ul>
-              <a href="#get-involved" className="inline-flex items-center text-[#1B5E20] font-medium hover:underline">
-                Learn More
-                <ArrowRight size={16} className="ml-1" />
+              <a
+                href="#get-involved"
+                className="inline-flex items-center text-[#1B5E20] font-medium hover:underline"
+              >
+                Learn More <ArrowRight size={16} className="ml-1" />
               </a>
             </div>
           </div>
         </div>
-        <div className="mt-16 bg-white p-8 rounded-lg shadow-sm">
-          <h3 className="text-2xl font-bold text-[#1B5E20] mb-6 text-center">
-            Our Carbon Removal Process
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h4 className="text-xl font-bold text-[#6D4C41] mb-4">
-                Verification & Certification
-              </h4>
-              <p className="text-gray-700 mb-4">
-                Our carbon removal process follows rigorous verification
-                standards to ensure the highest quality carbon credits:
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <span className="text-[#1B5E20] font-bold mr-2">1.</span>
-                  <span className="text-gray-700">
-                    Scientific measurement of carbon content in biochar
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#1B5E20] font-bold mr-2">2.</span>
-                  <span className="text-gray-700">
-                    Third-party verification of production methods
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#1B5E20] font-bold mr-2">3.</span>
-                  <span className="text-gray-700">
-                    Tracking of biochar application to soil
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#1B5E20] font-bold mr-2">4.</span>
-                  <span className="text-gray-700">
-                    Issuance of carbon removal certificates
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#1B5E20] font-bold mr-2">5.</span>
-                  <span className="text-gray-700">
-                    Ongoing monitoring and reporting
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-xl font-bold text-[#6D4C41] mb-4">
-                Why Our Approach Matters
-              </h4>
-              <p className="text-gray-700 mb-4">
-                Carbon & Soil Loop Africa offers a unique solution that
-                addresses multiple challenges simultaneously:
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <span className="text-[#1B5E20] font-bold mr-2">•</span>
-                  <span className="text-gray-700">
-                    <strong>Permanence:</strong> Carbon remains sequestered for
-                    1,000+ years
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#1B5E20] font-bold mr-2">•</span>
-                  <span className="text-gray-700">
-                    <strong>Co-benefits:</strong> Improves soil health and
-                    agricultural productivity
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#1B5E20] font-bold mr-2">•</span>
-                  <span className="text-gray-700">
-                    <strong>Scalability:</strong> Can be implemented across
-                    diverse regions
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#1B5E20] font-bold mr-2">•</span>
-                  <span className="text-gray-700">
-                    <strong>Community impact:</strong> Creates jobs and improves
-                    livelihoods
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#1B5E20] font-bold mr-2">•</span>
-                  <span className="text-gray-700">
-                    <strong>Transparency:</strong> Fully traceable from biomass
-                    to soil application
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Solutions;
