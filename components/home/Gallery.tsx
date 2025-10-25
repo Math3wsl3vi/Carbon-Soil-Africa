@@ -47,7 +47,7 @@ export function Gallery() {
     },
     {
       id: 6,
-      src: 'https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=800&auto=format&fit=crop&q=80',
+      src: '/images/gallery1.jpeg',
       category: 'farming',
       title: 'Improved Yields',
       description: 'Enhanced crop growth with biochar-enriched soil'
@@ -61,7 +61,7 @@ export function Gallery() {
     },
     {
       id: 8,
-      src: 'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=800&auto=format&fit=crop&q=80',
+      src: '/images/gallery2.jpeg',
       category: 'production',
       title: 'Production Facility',
       description: 'Our biochar production facility in operation'
@@ -75,7 +75,7 @@ export function Gallery() {
     },
     {
       id: 10,
-      src: 'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=800&auto=format&fit=crop&q=80',
+      src: '/images/gallery3.jpeg',
       category: 'community',
       title: 'Women Farmers',
       description: 'Empowering women farmers with sustainable solutions'
