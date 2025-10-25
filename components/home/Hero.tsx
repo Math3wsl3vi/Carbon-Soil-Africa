@@ -29,9 +29,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-[#1B5E20]/70 via-[#1B5E20]/40 to-transparent"></div>
 
       {/* Left Text Content (Centers on mobile) */}
-      <div className="absolute top-1/3 left-1/2 md:left-16 -translate-x-1/2 md:translate-x-0 z-20 space-y-4 max-w-xl text-center md:text-left px-6 sm:px-8">
+      <div className="absolute md:top-1/3 top-[25%] left-[35%] md:left-16 -translate-x-1/2 md:translate-x-0 z-20 space-y-4 md:max-w-5xl text-left md:text-left px-2 sm:px-2">
         <h1 className="text-4xl md:text-6xl font-bold text-white">
-          Healing Soils, <br className="hidden md:block" /> Unleashing Potential.
+        Healing Soils, Restoring Ecosystems 
+        <br className="hidden md:block" /> Empowering Communities and Sequester carbon
         </h1>
         <p className="text-lg md:text-xl text-white/90">
           Remove, Reduce, Restore, and Mitigate.

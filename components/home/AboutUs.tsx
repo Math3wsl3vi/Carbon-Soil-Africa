@@ -22,8 +22,8 @@ const AboutUs = () => {
             </div>
             <h3 className="text-xl font-bold text-[#1B5E20] mb-2">Our Mission</h3>
             <p className="text-gray-700">
-              To restore grasslands, soils, and water systems while empowering communities—especially women and youth—through sustainable, climate-smart solutions, turning invasive species and waste into biochar innovations that heal soils, store carbon, and sustain livelihoods
-            </p>
+            To remove Invasive weeds,  restore ecosystems, reduce wastes, and mitigate climate change
+             </p>
           </div>
           <div className="bg-[#F5F5DC] p-8 rounded-lg text-center">
             <div className="w-16 h-16 bg-[#1B5E20] rounded-full flex items-center justify-center mx-auto mb-4">

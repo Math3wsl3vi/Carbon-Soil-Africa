@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
-import { MapPin, Leaf, Users, Sprout } from 'lucide-react';
+import { MapPin, Leaf, Users, Sprout, TrendingUp } from 'lucide-react';
 
 const Impact = () => {
   const [inView, setInView] = useState(false);
@@ -37,6 +37,8 @@ const Impact = () => {
             community development across Africa.
           </p>
         </div>
+
+        {/* Metric Counters */}
         <div id="impact-metrics" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           <div className="bg-[#F5F5DC] p-6 rounded-lg text-center">
             <div className="w-16 h-16 bg-[#1B5E20] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -47,6 +49,7 @@ const Impact = () => {
             </div>
             <p className="text-gray-700">CO₂ Removed</p>
           </div>
+
           <div className="bg-[#F5F5DC] p-6 rounded-lg text-center">
             <div className="w-16 h-16 bg-[#1B5E20] rounded-full flex items-center justify-center mx-auto mb-4">
               <Sprout size={32} className="text-white" />
@@ -56,6 +59,7 @@ const Impact = () => {
             </div>
             <p className="text-gray-700">Land Restored</p>
           </div>
+
           <div className="bg-[#F5F5DC] p-6 rounded-lg text-center">
             <div className="w-16 h-16 bg-[#1B5E20] rounded-full flex items-center justify-center mx-auto mb-4">
               <Users size={32} className="text-white" />
@@ -65,6 +69,7 @@ const Impact = () => {
             </div>
             <p className="text-gray-700">Farmers Supported</p>
           </div>
+
           <div className="bg-[#F5F5DC] p-6 rounded-lg text-center">
             <div className="w-16 h-16 bg-[#1B5E20] rounded-full flex items-center justify-center mx-auto mb-4">
               <MapPin size={32} className="text-white" />
@@ -75,7 +80,10 @@ const Impact = () => {
             <p className="text-gray-700">Counties</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        {/* Impact Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Environmental Impact */}
           <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
             <h3 className="text-xl font-bold text-[#1B5E20] mb-4">
               Environmental Impact
@@ -83,9 +91,7 @@ const Impact = () => {
             <div className="space-y-4">
               <div>
                 <div className="flex justify-between mb-1">
-                  <span className="text-gray-700">
-                    Carbon Removal Efficiency
-                  </span>
+                  <span className="text-gray-700">Carbon Removal Efficiency</span>
                   <span className="text-[#1B5E20] font-medium">85%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -94,9 +100,7 @@ const Impact = () => {
               </div>
               <div>
                 <div className="flex justify-between mb-1">
-                  <span className="text-gray-700">
-                    Invasive Species Reduction
-                  </span>
+                  <span className="text-gray-700">Invasive Species Reduction</span>
                   <span className="text-[#1B5E20] font-medium">72%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -114,6 +118,8 @@ const Impact = () => {
               </div>
             </div>
           </div>
+
+          {/* Social Impact */}
           <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
             <h3 className="text-xl font-bold text-[#1B5E20] mb-4">
               Social Impact
@@ -145,6 +151,55 @@ const Impact = () => {
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
                   <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{ width: '56%' }}></div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Agricultural Impact */}
+          <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-bold text-[#1B5E20] mb-4">
+              Agricultural Impact
+            </h3>
+            <div className="space-y-4">
+              <div>
+                <div className="flex justify-between mb-1">
+                  <span className="text-gray-700">Improved Soil Fertility</span>
+                  <span className="text-[#1B5E20] font-medium">30-50%</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-2.5">
+                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{ width: '40%' }}></div>
+                </div>
+                <p className="text-xs text-gray-600 mt-1">Enhanced nutrient availability</p>
+              </div>
+              <div>
+                <div className="flex justify-between mb-1">
+                  <span className="text-gray-700">Better Water Retention</span>
+                  <span className="text-[#1B5E20] font-medium">60%</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-2.5">
+                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{ width: '60%' }}></div>
+                </div>
+                <p className="text-xs text-gray-600 mt-1">Drought resilience</p>
+              </div>
+              <div>
+                <div className="flex justify-between mb-1">
+                  <span className="text-gray-700">Enhanced Crop Yields</span>
+                  <span className="text-[#1B5E20] font-medium">25-40%</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-2.5">
+                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{ width: '32.5%' }}></div>
+                </div>
+                <p className="text-xs text-gray-600 mt-1">Increased productivity</p>
+              </div>
+              <div>
+                <div className="flex justify-between mb-1">
+                  <span className="text-gray-700">Reduced Fertilizer Needs</span>
+                  <span className="text-[#1B5E20] font-medium">35%</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-2.5">
+                  <div className="bg-[#1B5E20] h-2.5 rounded-full" style={{ width: '35%' }}></div>
+                </div>
+                <p className="text-xs text-gray-600 mt-1">Lower input costs</p>
               </div>
             </div>
           </div>
