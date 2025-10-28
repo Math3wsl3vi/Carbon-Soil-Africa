@@ -17,9 +17,12 @@ export default function Hero() {
         loop
         muted
         playsInline
+        preload="metadata" // Changed from "auto"
         className="absolute inset-0 w-full h-full object-cover"
+        poster="/images/video-poster.jpg" // Add a poster frame
       >
         <source src="/videos/hero1.mp4" type="video/mp4" />
+        <source src="/videos/hero1.webm" type="video/webm" /> {/* Add WebM format */}
       </video>
 
       {/* Fallback image overlay */}

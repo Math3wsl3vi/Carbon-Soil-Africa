@@ -9,7 +9,7 @@ import Newsletter from '@/components/home/Newsletter';
 
 export default function HomePage() {
   return (
-    <div className="font-poppins">
+    <div className="font-merriweather">
       <Header />
       <main>
         <Hero />
