@@ -1,25 +1,25 @@
 import React from "react";
 import { Building, Tractor, Users, ArrowRight } from "lucide-react";
 import Footer from "@/components/home/Footer";
-import Header from "@/components/home/Header";
+import PageHeader from "@/components/home/PageHeader";
 
 const Solutions = () => {
   return (
     <div className="font-poppins">
-      <Header/>
+      <PageHeader/>
       <section id="solutions" className="bg-[#F5F5DC]">
       {/* 🌾 Banner Section */}
       <div
-        className="relative h-[50vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('/images/windmill1.jpg')", // <-- Replace with your actual image path
+            "url('/images/hero7.jpg')", // <-- Replace with your actual image path
         }}
       >
         <div className="absolute inset-0 bg-black/50" /> {/* dark overlay */}
         <div className="relative text-center text-white px-6">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Building a Greener Future Together
+            Our Solutions
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto">
             Empowering Corporates, Farmers, and Communities through Sustainable Carbon and Soil Solutions.

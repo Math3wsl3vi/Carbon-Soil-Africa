@@ -40,12 +40,6 @@ const Header = () => {
           <Link href="/about" className="text-[#1B5E20] hover:text-[#6D4C41] font-medium">
             About Us
           </Link>
-          <a href="#how-it-works" className="text-[#1B5E20] hover:text-[#6D4C41] font-medium">
-            How It Works
-          </a>
-          <Link href="#impact" className="text-[#1B5E20] hover:text-[#6D4C41] font-medium">
-            Our Impact
-          </Link>
           <Link href="/solutions" className="text-[#1B5E20] hover:text-[#6D4C41] font-medium">
             Solutions
           </Link>
@@ -69,12 +63,6 @@ const Header = () => {
           <div className="flex flex-col space-y-4">
             <Link href="/about" className="text-[#1B5E20] hover:text-[#6D4C41] font-medium" onClick={() => setIsMenuOpen(false)}>
               About Us
-            </Link>
-            <Link href="/how-it-works" className="text-[#1B5E20] hover:text-[#6D4C41] font-medium" onClick={() => setIsMenuOpen(false)}>
-              How It Works
-            </Link>
-            <Link href="/impact" className="text-[#1B5E20] hover:text-[#6D4C41] font-medium" onClick={() => setIsMenuOpen(false)}>
-              Our Impact
             </Link>
             <Link href="/solutions" className="text-[#1B5E20] hover:text-[#6D4C41] font-medium" onClick={() => setIsMenuOpen(false)}>
               Solutions

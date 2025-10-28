@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Building, Tractor, Users, Check } from 'lucide-react';
 import Footer from '@/components/home/Footer';
-import Header from '@/components/home/Header';
+import PageHeader from '@/components/home/PageHeader';
 const GetInvolved = () => {
   const [activeTab, setActiveTab] = useState('corporate');
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -49,7 +49,24 @@ const GetInvolved = () => {
   };
   return( 
   <div className='font-poppins'>
-    <Header/>
+    <PageHeader/>
+    <div
+        className="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('/images/hero8.jpg')", // <-- Replace with your actual image path
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50" /> {/* dark overlay */}
+        <div className="relative text-center text-white px-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Our Leadership Team
+          </h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto">
+            Empowering Corporates, Farmers, and Communities through Sustainable Carbon and Soil Solutions.
+          </p>
+        </div>
+      </div>
     <section id="get-involved" className="py-16 md:py-24 ">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">

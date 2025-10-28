@@ -1,51 +1,75 @@
 'use client'
 import Footer from '@/components/home/Footer';
-import Header from '@/components/home/Header';
+import PageHeader from '@/components/home/PageHeader';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 const Partners = () => {
-  const partners = [
-    { id: 1, name: 'GreenTech Fund', type: 'Investor', logo: '/images/test.png' },
-    { id: 2, name: 'Africa Climate Foundation', type: 'NGO', logo: '/images/test.png' },
-    { id: 3, name: 'AgriInnovate', type: 'Research', logo: '/images/test.png' },
-    { id: 4, name: 'Sustainable Future', type: 'Corporate', logo: '/images/test.png' },
-    { id: 5, name: 'EcoVentures', type: 'Investor', logo: '/images/test.png' },
-    { id: 6, name: 'Farmers Alliance', type: 'Community', logo: '/images/test.png' },
-  ];
+  // const partners = [
+  //   { id: 1, name: 'GreenTech Fund', type: 'Investor', logo: '/images/test.png' },
+  //   { id: 2, name: 'Africa Climate Foundation', type: 'NGO', logo: '/images/test.png' },
+  //   { id: 3, name: 'AgriInnovate', type: 'Research', logo: '/images/test.png' },
+  //   { id: 4, name: 'Sustainable Future', type: 'Corporate', logo: '/images/test.png' },
+  //   { id: 5, name: 'EcoVentures', type: 'Investor', logo: '/images/test.png' },
+  //   { id: 6, name: 'Farmers Alliance', type: 'Community', logo: '/images/test.png' },
+  // ];
 
   const testimonials = [
     {
       id: 1,
       name: "Dr. Sylvia Jemutai Rotich",
       role: "CEO, Carbon & Soil Loop Africa",
-      image: "/images/founder1.jpg",
+      image: "/images/sylvia.jpeg",
       education: [
         "Ph.D. Environmental Planning and Management (Climate Change Adaptation)",
         "MSc. Environmental Governance",
         "BSc. Environmental Conservation & Natural Resource Management (Hons.)",
       ],
+      socials: {
+        email: "mailto:sylvia@carbonsoil.africa",
+      }
     },
     {
       id: 2,
-      name: "Jeruto Kosgey",
+      name: "Jeruto Kosgey, MBA",
       role: "COO, Carbon & Soil Loop Africa",
       image: "/images/founder1.jpg",
       education: [
         "Executive MBA",
         "BSc (Hons) Economics",
       ],
+      socials: {
+        email: "mailto:jeruto@carbonsoil.africa",
+      }
     },
   ];
 
   return (
    <div className='font-poppins'>
-    <Header/>
+    <PageHeader/>
+    <div
+        className="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('/images/hero3.jpg')", // <-- Replace with your actual image path
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50" /> {/* dark overlay */}
+        <div className="relative text-center text-white px-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Our Leadership Team
+          </h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto">
+            Empowering Corporates, Farmers, and Communities through Sustainable Carbon and Soil Solutions.
+          </p>
+        </div>
+      </div>
      <section id="partners" className="py-16 md:py-24 bg-white">
+
       <div className="container mx-auto px-4 md:px-6">
         {/* Partners Section */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1B5E20] mb-4">
             Our Partners
           </h2>
@@ -74,14 +98,14 @@ const Partners = () => {
               <p className="text-xs text-gray-600 text-center">{partner.type}</p>
             </div>
           ))}
-        </div>
+        </div> */}
 
       {/* Founders Section */}
         <h3 className="text-3xl md:text-4xl font-bold text-[#1B5E20] mb-12 text-center">
           Our Leadership Team
         </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="max-w-4xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
           {testimonials.map((member) => (
             <div
               key={member.id}
@@ -108,14 +132,13 @@ const Partners = () => {
                 >
                   View profile →
                 </a>
+                  {/* Social Icons */}
+                  <div className="flex justify-center items-center gap-4 mt-2">
+                    <Link href={member.socials.email} target="_blank">
+                      <Image width={100} height={100} src="/images/gmail.png" alt="gmail" className="w-7 h-7 hover:opacity-80 transition" />
+                    </Link>
+                  </div>
 
-                {/* Social Icons */}
-                <div className="flex justify-center items-center gap-3 mt-2">
-                  <Image width={100} height={100} src="/images/gmail.png" alt="gmail" className='w-7 h-7'/>
-                  <Image width={100} height={100} src="/images/linkedin.png" alt="linkedin" className='w-6 h-6'/>
-                  <Image width={100} height={100} src="/images/x.png" alt="x" className='w-5 h-5'/>
-
-                </div>
               </div>
             </div>
           ))}

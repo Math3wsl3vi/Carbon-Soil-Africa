@@ -19,14 +19,14 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/videos/soil.mp4" type="video/mp4" />
+        <source src="/videos/hero1.mp4" type="video/mp4" />
       </video>
 
       {/* Fallback image overlay */}
       <div className="absolute inset-0 bg-[url('/images/soil-bg.jpg')] bg-cover bg-center opacity-60"></div>
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#1B5E20]/70 via-[#1B5E20]/40 to-transparent"></div>
+      {/* <div className="absolute inset-0 bg-gradient-to-t from-[#1B5E20]/70 via-[#1B5E20]/40 to-transparent"></div> */}
 
       {/* Left Text Content (Centers on mobile) */}
       <div className="absolute md:top-1/3 top-[25%] left-[35%] md:left-16 -translate-x-1/2 md:translate-x-0 z-20 space-y-4 md:max-w-5xl text-left md:text-left px-2 sm:px-2">

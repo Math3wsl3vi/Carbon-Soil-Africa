@@ -1,14 +1,14 @@
 import Footer from '@/components/home/Footer';
-import Header from '@/components/home/Header';
+import PageHeader from '@/components/home/PageHeader';
 import Image from 'next/image';
 import React from 'react';
 
 const About = () => {
   return (
     <div className='font-poppins'>
-    <Header/>
+    <PageHeader/>
     <div
-        className="relative h-[50vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('/images/windmill1.jpg')", // <-- Replace with your actual image path
@@ -110,10 +110,9 @@ const About = () => {
             The Climate Change Challenge
           </h3>
           <p className="text-gray-700 max-w-4xl mx-auto">
-            Africa is among the most vulnerable regions to climate change, facing 
-            rising temperatures, unpredictable rainfall, and declining agricultural 
-            productivity. Greenhouse gas emissions continue to drive global warming, 
-            but solutions that both remove carbon and restore ecosystems remain scarce.  
+          Carbon and Soil Loop Africa Ltd (CSLAf) addresses the interconnected environmental, 
+          ecological, and socio-economic challenges affecting Kenya and similar landscapes across sub-Saharan Africa.
+
             <br /><br />
             Our approach—transforming invasive plants into biochar—offers a 
             nature-based solution that not only locks away carbon for centuries but 
