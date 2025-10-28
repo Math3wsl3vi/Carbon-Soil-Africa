@@ -1,8 +1,12 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/api/notify/route": "app/api/notify/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/get-involved/page": "app/get-involved/page.js",
+  "/about/page": "app/about/page.js",
+  "/login/page": "app/login/page.js",
   "/page": "app/page.js",
   "/partners/page": "app/partners/page.js",
   "/solutions/page": "app/solutions/page.js",
-  "/about/page": "app/about/page.js",
-  "/get-involved/page": "app/get-involved/page.js"
+  "/cart/page": "app/cart/page.js"
 }

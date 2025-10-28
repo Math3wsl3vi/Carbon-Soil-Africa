@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
-import { MapPin, Leaf, Users, Sprout, TrendingUp } from 'lucide-react';
+import { MapPin, Leaf, Users, Sprout } from 'lucide-react';
 
 const Impact = () => {
   const [inView, setInView] = useState(false);

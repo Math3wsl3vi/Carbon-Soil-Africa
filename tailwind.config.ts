@@ -13,6 +13,8 @@ export default {
 			poppins: "var(--font-poppins)",
 			geist: "var(--font-geist-sans)",
 			mono: "var(--font-geist-mono)",
+			merriweather: ['var(--font-merriweather)'],
+			playfair: ['var(--font-playfair)'],
 		  },
   		colors: {
 			orange: {

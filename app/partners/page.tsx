@@ -34,13 +34,14 @@ const Partners = () => {
       id: 2,
       name: "Jeruto Kosgey, MBA",
       role: "COO, Carbon & Soil Loop Africa",
-      image: "/images/founder1.jpg",
+      image: "/images/jeruto.jpeg",
       education: [
         "Executive MBA",
         "BSc (Hons) Economics",
       ],
       socials: {
         email: "mailto:jeruto@carbonsoil.africa",
+        linkedin:"https://www.linkedin.com/in/jeruto-k/"
       }
     },
   ];
@@ -117,7 +118,7 @@ const Partners = () => {
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
 
@@ -125,19 +126,35 @@ const Partners = () => {
               <div className="p-6">
                 <h4 className="text-lg font-bold text-[#1B5E20]">{member.name}</h4>
                 <p className="text-gray-600 text-sm mb-3">{member.role}</p>
-
-                <a
-                  href="#"
-                  className="text-sm text-[#1B5E20] font-medium hover:underline inline-block mb-4"
-                >
-                  View profile →
-                </a>
                   {/* Social Icons */}
                   <div className="flex justify-center items-center gap-4 mt-2">
-                    <Link href={member.socials.email} target="_blank">
-                      <Image width={100} height={100} src="/images/gmail.png" alt="gmail" className="w-7 h-7 hover:opacity-80 transition" />
-                    </Link>
+                    {/* Email is always shown */}
+                    {member.socials.email && (
+                      <Link href={member.socials.email} target="_blank">
+                        <Image
+                          width={100}
+                          height={100}
+                          src="/images/gmail.png"
+                          alt="gmail"
+                          className="w-7 h-7 hover:opacity-80 transition"
+                        />
+                      </Link>
+                    )}
+
+                    {/* Only show LinkedIn if available */}
+                    {member.socials.linkedin && (
+                      <Link href={member.socials.linkedin} target="_blank">
+                        <Image
+                          width={100}
+                          height={100}
+                          src="/images/linkedin.png"
+                          alt="linkedin"
+                          className="w-6 h-6 hover:opacity-80 transition"
+                        />
+                      </Link>
+                    )}
                   </div>
+
 
               </div>
             </div>
