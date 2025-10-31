@@ -26,7 +26,7 @@ export function Gallery() {
     },
     {
       id: 3,
-      src: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&auto=format&fit=crop&q=80',
+      src: '/images/kiln2.jpeg',
       category: 'biochar',
       title: 'Quality Biochar',
       description: 'High-quality biochar ready for soil application'
@@ -54,7 +54,7 @@ export function Gallery() {
     },
     {
       id: 7,
-      src: 'https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&auto=format&fit=crop&q=80',
+      src: '/images/kiln1.jpeg',
       category: 'biomass',
       title: 'Invasive Plant Species',
       description: 'Prosopis and other invasive plants before processing'
