@@ -39,7 +39,7 @@ export default function Hero() {
 
       {/* Main Content */}
       <div className="absolute md:top-1/3 top-[25%] left-[35%] md:left-16 -translate-x-1/2 md:translate-x-0 z-20 space-y-4 md:max-w-5xl text-left px-2">
-        <h1 className="text-4xl md:text-6xl lg:text-4xl font-bold text-white">
+        <h1 className="text-4xl md:text-6xl lg:text-5xl font-bold text-white">
           Healing Soils, Restoring Ecosystems 
           <br className="hidden md:block" /> Empowering Communities and Sequestering carbon
         </h1>
