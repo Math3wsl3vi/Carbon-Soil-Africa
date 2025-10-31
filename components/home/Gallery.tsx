@@ -26,7 +26,7 @@ export function Gallery() {
     },
     {
       id: 3,
-      src: '/images/kiln2.jpeg',
+      src: '/images/kiln1.jpeg',
       category: 'biochar',
       title: 'Quality Biochar',
       description: 'High-quality biochar ready for soil application'
@@ -109,7 +109,7 @@ export function Gallery() {
           {images.map((image, index) => <div key={index} className={`overflow-hidden rounded-lg cursor-pointer transition-all duration-700 ${inView ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{
           transitionDelay: `${index * 100}ms`
         }} onClick={() => setSelectedImage(image.src)}>
-              <Image width={500} height={500} src={image.src} alt={image.title} className="w-full h-64 object-cover transition-transform duration-500 hover:scale-105" />
+              <Image width={500} height={500} src={image.src} alt={image.title} className="w-full h-64 object-cover transition-transform duration-500 object-top hover:scale-105" />
             </div>)}
         </div>
       </div>
@@ -118,7 +118,7 @@ export function Gallery() {
           <button className="absolute top-4 right-4 text-white hover:text-amber" onClick={() => setSelectedImage(null)}>
             <XIcon size={32} />
           </button>
-          <Image width={500} height={500} src={selectedImage} alt="Enlarged view" className="max-w-full max-h-[90vh] object-contain" onClick={e => e.stopPropagation()} />
+          <Image width={500} height={500} src={selectedImage} alt="Enlarged view" className="max-w-full max-h-[90vh] object-contain object-top" onClick={e => e.stopPropagation()} />
         </div>}
     </section>;
 }
