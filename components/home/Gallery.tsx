@@ -12,14 +12,14 @@ export function Gallery() {
   const images = [
     {
       id: 1,
-      src: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&auto=format&fit=crop&q=80',
+      src: '/images/gal10.jpeg',
       category: 'biomass',
       title: 'Invasive Species Collection',
       description: 'Community members collecting Prosopis and other invasive plants'
     },
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&auto=format&fit=crop&q=80',
+      src: '/images/gal15.jpeg',
       category: 'production',
       title: 'Pyrolysis Process',
       description: 'Converting biomass into biochar through controlled heating'
@@ -33,8 +33,7 @@ export function Gallery() {
     },
     {
       id: 4,
-      src: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&auto=format&fit=crop&q=80',
-      category: 'farming',
+      src: '/images/gal7.jpeg',
       title: 'Soil Application',
       description: 'Farmers applying biochar to improve soil health'
     },
@@ -68,7 +67,7 @@ export function Gallery() {
     },
     {
       id: 9,
-      src: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&auto=format&fit=crop&q=80',
+      src: '/images/gal1.jpeg',
       category: 'biochar',
       title: 'Biochar Analysis',
       description: 'Quality testing and carbon content analysis'
@@ -82,14 +81,34 @@ export function Gallery() {
     },
     {
       id: 11,
-      src: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&auto=format&fit=crop&q=80',
-      category: 'farming',
+      src: '/images/gal2.jpeg',
       title: 'Field Results',
       description: 'Visible improvements in crop health and soil quality'
     },
     {
       id: 12,
-      src: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&auto=format&fit=crop&q=80',
+      src: '/images/gal11.jpeg',
+      category: 'community',
+      title: 'Community Impact',
+      description: 'Creating sustainable livelihoods across communities'
+    },
+    {
+      id: 13,
+      src: '/images/gal8.jpeg',
+      category: 'community',
+      title: 'Community Impact',
+      description: 'Creating sustainable livelihoods across communities'
+    },
+    {
+      id: 14,
+      src: '/images/gal10.jpeg',
+      category: 'community',
+      title: 'Community Impact',
+      description: 'Creating sustainable livelihoods across communities'
+    },
+    {
+      id: 15,
+      src: '/images/gal5.jpeg',
       category: 'community',
       title: 'Community Impact',
       description: 'Creating sustainable livelihoods across communities'
